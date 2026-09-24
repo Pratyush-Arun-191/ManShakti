@@ -1,3 +1,4 @@
+const API_BASE_URL = "https://manshakti-backend.onrender.com";
 import { useState } from "react";
 import "./App.css";
 
@@ -114,7 +115,7 @@ function Wellbeing() {
     setError("");
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/reflection", {
+      const response = await fetch(`${API_BASE_URL}/reflection`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -283,8 +284,7 @@ function Academic() {
     setError("");
 
     try {
-      const response = await fetch(
-        "http://127.0.0.1:8000/academic/evaluate",
+      const response = await fetch(`${API_BASE_URL}/academic/evaluate`,
         {
           method: "POST",
           headers: {
