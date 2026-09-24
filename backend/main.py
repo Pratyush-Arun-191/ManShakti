@@ -56,10 +56,10 @@ print("Database tables ready!")
 
 app = FastAPI(title="ManShakti API")
 
-app.add_middleware(
+app.add_middleware (
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=False
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
