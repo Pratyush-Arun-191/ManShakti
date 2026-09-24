@@ -58,7 +58,7 @@ app = FastAPI(title="ManShakti API")
 
 app.add_middleware (
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://man-shakti.vercel.app"],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
